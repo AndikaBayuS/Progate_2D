@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Bagian Header */
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url(image/background-1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    position: relative;
+    align-items: center;
+}
+.logo a {
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-left: 50px;
+}
+
+
+.btn {
+    color: black;
+    font-weight: 500;
+    padding-right: 50px;
+}
+
+.btn-sign-up {
+    padding: 0.7rem 2rem;
+    background: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-sign-up:hover {
+    background: black;
+    color: white;
+}
+
+/* Bagian Main */
+
+.main-title {
+    margin: auto auto;
+    font-size: 4rem;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.main-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+}
+
+.today-date {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.today-date span{
+    font-size: 1.5rem;
+}
+
+.main-bottom {
+    padding: 2rem 7rem;
+}
+
+.social-media {
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.social-media li {
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+
+.tmbl {
+    padding: 0.5rem 1rem;
+    background: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Bagian Body */
+
+.body-project {
+    width: 100%;
+    padding: 0 0;
+}
+
+.body-container {
+    width: 900px;
+    margin: auto auto;
+}
+
+.image-gallery {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.image-box {
+    width: 22%;
+    height: 250px;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: abolute;
+}
+
+.image-box:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.image-box:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.choose {
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.body-info {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* Bagian Footer */
+.footer {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
