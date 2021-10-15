@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 body {
     background: black;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -32,35 +34,36 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 0.5rem;
     position: relative;
     align-items: center;
+    background: rgba(46, 49, 49, 0.5);
 }
 .logo a {
-    color: black;
+    color: white;
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: 700;
     padding-left: 50px;
 }
 
 
 .btn {
-    color: black;
+    color: white;
     font-weight: 500;
-    padding-right: 50px;
+    padding-right: 70px;
 }
 
 .btn-sign-up {
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 1rem;
     background: white;
     color: black;
     font-weight: 500;
-    border-radius: 50px;
+    border-radius: 15px;
     transition: 0.3s;
 }
 
 .btn-sign-up:hover {
-    background: black;
+    background:gray;
     color: white;
 }
 
@@ -71,7 +74,8 @@ nav {
     font-size: 4rem;
     position: relative;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    color: white;
 }
 
 .main-bottom{
@@ -95,28 +99,6 @@ nav {
     padding: 2rem 7rem;
 }
 
-.social-media {
-    display: flex;
-    list-style: none;
-    width: 500px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
-}
-
-.social-media li {
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-
-.tmbl {
-    padding: 0.5rem 1rem;
-    background: white;
-    color: black;
-    font-weight: 500;
-    border-radius: 50px;
-}
 
 /* Bagian Body */
 
@@ -148,7 +130,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: abolute;
+    position: relative;
 }
 
 .image-box:nth-child(odd) {
@@ -170,13 +152,38 @@ nav {
 
 .body-info {
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.5rem;
+    margin: 100px;
 }
 
 /* Bagian Footer */
-.footer {
+footer {
     width: 100%;
-    padding: 1.5rem 1rem;
-    text-align: center;
 }
+
+.footer {
+    display: flex;
+    padding: 0.5rem;
+    position: relative;
+    align-items: center;
+    background: rgba(46, 49, 49, 0.3);
+    justify-content: center;
+}
+
+.footer-logo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-right: 40px;
+}
+
+.footer-list a {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-right: 30px;
+}
+
+
