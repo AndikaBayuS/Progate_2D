@@ -154,7 +154,6 @@ nav {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 1.5rem;
   margin: 50px;
 }
 
@@ -203,9 +202,34 @@ footer {
   .image-box:nth-child(odd) {
     align-self: flex-start;
   }
+}
+
+@media all and (max-width: 850px) {
+  .body-container {
+    width: 100%;
+  }
   
+  .list {
+    display: none;
+  }
+
 }
 
 @media all and (max-width: 670px) {
+  .main-title {
+    font-size: 36px;
+  }
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 
+  .image-box {
+    width: 80%;
+  }
+
+  .footer-logo {
+    width: 100%;
+  }
 }
