@@ -119,7 +119,8 @@ nav {
 }
 
 .image-box {
-  width: 22%;
+  flex: 1;
+  width: 25%;
   height: 250px;
   position: relative;
 }
@@ -183,4 +184,28 @@ footer {
   font-weight: 400;
   font-size: 1rem;
   padding-right: 30px;
+}
+
+@media all and (max-width: 1000px) {
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: center;
+    height: 500px;
+    width: 80%;
+  }
+  .image-box {
+    margin-bottom: 50px;
+  }
+
+  .image-box:nth-child(odd) {
+    align-self: flex-start;
+  }
+  
+}
+
+@media all and (max-width: 670px) {
+
 }
